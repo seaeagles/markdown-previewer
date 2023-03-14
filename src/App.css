@@ -1,0 +1,24 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#editor {
+  padding: 2rem;
+  min-width: 40vh;
+  min-height: 60vh;
+  background-color: aliceblue;
+  color: blueviolet;
+  border-radius: 1rem;
+}
+
+div#preview {
+  background-color: aliceblue;
+  padding: 1rem;
+  min-width: 40vh;
+  min-height: 40vh;
+  color: blueviolet;
+  border-radius: 1rem;
+}
