@@ -42,6 +42,13 @@ function App() {
     setText(event.target.value)
   };
 
+  const Markdown = ({ text }) => {
+    const htmlText = marked(text, { breaks: true });
+    return (
+      <div dangerouslySetInnerHTML={{ __html: htmlText }} />
+    )
+  }
+
   return (
     <div className="App">
       <h1 id="title">Markdown Previewer</h1>
@@ -56,11 +63,10 @@ function App() {
 
       </div>
     
-    <span className="gap"></span>
       <div id="PreviewWrap">
         <h3>Preview</h3>
         <div id="preview">
-          {text}
+        <Markdown text={text} />
         </div>
       </div>
     </div>
