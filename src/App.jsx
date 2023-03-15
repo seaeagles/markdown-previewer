@@ -44,9 +44,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Markdown Previewer</h1>
+      <h1 id="title">Markdown Previewer</h1>
       <div id="EditboxWrap">
-        
+        <h3>Editor</h3>
         <textarea 
           id="editor"
           value={text}
@@ -58,6 +58,7 @@ function App() {
     
     <span className="gap"></span>
       <div id="PreviewWrap">
+        <h3>Preview</h3>
         <div id="preview">
           {text}
         </div>

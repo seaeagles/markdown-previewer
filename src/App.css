@@ -5,20 +5,46 @@
   text-align: center;
 }
 
+body {
+  color: #01579B;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#title {
+  background: #01579B;
+  color: #80ffcc;
+  box-shadow: 1px 3px 15px blueviolet;
+  max-width: 80vh;
+  padding: 2rem;
+  margin-left: 20%;
+}
+
 #editor {
   padding: 2rem;
-  min-width: 40vh;
+  min-width: 60vh;
   min-height: 60vh;
   background-color: aliceblue;
   color: blueviolet;
   border-radius: 1rem;
 }
 
-div#preview {
+#preview {
   background-color: aliceblue;
   padding: 1rem;
-  min-width: 40vh;
-  min-height: 40vh;
+  min-width: 60vh;
+  min-height: 60vh;
   color: blueviolet;
   border-radius: 1rem;
+}
+
+h3 {
+  background: #00FF99;
+  border-left: 2px solid #01579B;
+  border-right: 2px solid #01579B;
+  border-top: 2px solid #01579B;
+  border-radius: 2px;
+  padding: 12px;
+  max-width: 65vh;
+  margin-left: 29%;
+
 }
