@@ -42,11 +42,9 @@ function App() {
     setText(event.target.value)
   };
 
-  const Markdown = ({ text }) => {
+  const markdown = ({ text }) => {
     const htmlText = marked(text, { breaks: true });
-    return (
-      <div dangerouslySetInnerHTML={{ __html: htmlText }} />
-    )
+    return htmlText
   }
 
   return (
@@ -65,8 +63,8 @@ function App() {
     
       <div id="PreviewWrap">
         <h3>Preview</h3>
-        <div id="preview">
-        <Markdown text={text} />
+        <div dangerouslySetInnerHTML={{ __html: markdown({text}) }} id="preview">
+        {/* <Markdown text={text} /> */}
         </div>
       </div>
     </div>
